@@ -20,6 +20,8 @@ class PostController extends Controller
             'body' => 'required',
         ]);
 
+        $fields['comment'] = "sample";
+
         $post = Post::create($fields);
 
         return $post;

@@ -13,13 +13,6 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        Post::factory()->create([
-            'title' => 'One More Light',
-            'body' => 'Nothing Beats a Jet to Holiday',
-            'comment' => '',
-            'created_at' => now(),
-            'update_at' => now(),
-        ]);
 
         $this->call(PostSeeder::class);
     }
