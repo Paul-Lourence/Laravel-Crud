@@ -2,21 +2,18 @@
 
 namespace Database\Seeders;
 
-use App\Models\Post;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
-
-class PostSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fea4dd5693bff8fdb5326ca977cd4786e08e7dd
-        $this->call(PostSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }
