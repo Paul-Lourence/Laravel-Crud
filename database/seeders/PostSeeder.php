@@ -13,10 +13,6 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
-
-=======
->>>>>>> 7fea4dd5693bff8fdb5326ca977cd4786e08e7dd
         $this->call(PostSeeder::class);
     }
 }
