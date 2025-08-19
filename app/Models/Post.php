@@ -13,7 +13,11 @@ class Post extends Model
     protected $fillable = [
         'title',
         'body',
+<<<<<<< HEAD
         'comment',
+=======
+        'comment'
+>>>>>>> b334f07d98354510ba81a48ae47529be2abb2f54
     ];
 
     public function user()
