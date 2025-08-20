@@ -30,10 +30,9 @@ class PostController extends Controller implements HasMiddleware
     public function store(Request $request)
     {
         $fields = $request->validate([
-            'Username' => 'required|string|max:255|unique:posts',
-            'Caption' => 'required|string|max:255',
-            'Post' => 'required|string',
-            'Comment' => 'nullable|string',
+            'title' => 'required|string|max:255',
+            'body' => 'required|string',
+            'comment' => 'nullable|string',
         ]);
 
         $post = $request->user()->posts()->create($fields);
@@ -58,8 +57,8 @@ class PostController extends Controller implements HasMiddleware
         Gate::authorize('modify', $post);
         
          $fields = $request->validate([
-            'Caption' => 'required|string|max:255',
-            'Post' => 'required|string',
+            'title' => 'required|string|max:255',
+            'body' => 'required|string',
             'comment' => 'nullable|string',
         ]);
 
