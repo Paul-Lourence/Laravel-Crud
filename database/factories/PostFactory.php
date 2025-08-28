@@ -23,8 +23,7 @@ class PostFactory extends Factory
             'body' => fake()->sentence(),
             'comment' => fake()->sentence(),
             'created_at' => now(),
-            'updated_at' => now(),
-              
+            'updated_at' => now(),       
         ];
     }
 }
