@@ -4,13 +4,14 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 
 
-class PostSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $this->call(PostSeeder::class);
+
+        $this->call(UserSeeder::class);
     }
 }
